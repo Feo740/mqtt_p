@@ -4,7 +4,7 @@ config :mmql,
   options: %{
     connections: %{
 
-      "C" => %{
+      "V" => %{
         mq_type: :mqmqtt,
         autoconnect: false,
         # host: "test.mosquitto.org",
