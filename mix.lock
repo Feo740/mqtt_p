@@ -1,4 +1,0 @@
-%{"gproc": {:hex, :gproc, "0.3.1", "ec14f40cb941bde3f940de59c11e59beb2977e90dbae72fab3ddf77743fd4ea9", [], [], "hexpm"},
-  "hulaaki": {:hex, :hulaaki, "0.0.4", "be9b579573ef33138433fc4052ef9b4c04799f5a7f067b551c64ee813da01d3e", [], [], "hexpm"},
-  "mmql": {:git, "https://github.com/UA3MQJ/elx-mmql.git", "15c6d5692fae3984e092446461c700c9f45ce365", []},
-  "nats": {:git, "https://github.com/nats-io/elixir-nats.git", "eeb6265c6dd514065e95be5336ddd07ad796fac0", []}}
