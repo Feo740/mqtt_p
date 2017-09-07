@@ -11,7 +11,9 @@ config :mmql,
         # port: 1883
         host: "192.168.0.105",
         port: 1883,
-        timeout: 20000
+        timeout: 20000,
+        username: "user",
+        password: "password"
       }
     }
   }
