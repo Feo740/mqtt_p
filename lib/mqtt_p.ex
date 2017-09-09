@@ -9,6 +9,10 @@ defmodule MqttP do
         {:subscribed_publish,conn_name,topic,msg}->
           IO.puts("message is:#{msg}")
           start_rcv()
+        after
+         2_000->
+           IO.puts("msg not received")
+           start_rcv()
       end
   end
 end
