@@ -1,18 +1,9 @@
 defmodule MqttP do
-  def funk() do
-    MMQL.connect("V")
-    MMQL.sub("V","/ESP/flap_1")
-    start_rcv()
-  end
-  def start_rcv() do
-      receive do
-        {:subscribed_publish,conn_name,topic,msg}->
-          IO.puts("message is:#{msg}")
-          start_rcv()
-        after
-         2_000->
-           IO.puts("msg not received")
-           start_rcv()
-      end
+  use Hulaaki.Client
+def worker do
+  {:ok,pid}=Hulaaki.Client.start_link(%{}) #???
+  options=[client_id: "eepc",host: "192.168.0.105",port: "1883",ssl: true]
+  conn=Hulaaki.Client.connect(pid,options)
+  p=Hulaaki.Client.ping(pid)
   end
 end
